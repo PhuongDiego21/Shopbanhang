@@ -19,9 +19,9 @@ namespace Shopbanhang
             Con.ConnectionString = @"Data Source=DESKTOP-NHT2019\SQLEXPRESS;Initial Catalog=Quanlybanhanggiadung;User ID=sa;Password=123456";
             Con.Open();                  //Mở kết nối
             //Kiểm tra kết nối
-            if (Con.State == ConnectionState.Open)
-                MessageBox.Show("Kết nối thành công");
-            else MessageBox.Show("Không thể kết nối với dữ liệu");
+            //if (Con.State == ConnectionState.Open)
+            //    MessageBox.Show("Kết nối thành công");
+            //else MessageBox.Show("Không thể kết nối với dữ liệu");
 
         }
         public static void Disconnect()

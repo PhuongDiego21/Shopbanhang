@@ -65,13 +65,19 @@ namespace Shopbanhang
 
         private void btndangxuat_Click(object sender, EventArgs e)
         {
-            DialogResult rs = MessageBox.Show("Bạn có chắc muốn thoát không ? ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            if (rs == DialogResult.OK)
+            DialogResult rs = MessageBox.Show("Bạn có chắc muốn thoát không ? ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (rs == DialogResult.Yes)
             {
                 Application.Exit();
+
+            }
+            else
+            {
+                Dangnhap dn = new Dangnhap();
+                dn.ShowDialog();
                 
-            }    
-               
+             
+            }
             
         }
 
