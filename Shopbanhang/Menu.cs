@@ -73,6 +73,7 @@ namespace Shopbanhang
             }
             else
             {
+                this.Close();
                 Dangnhap dn = new Dangnhap();
                 dn.ShowDialog();
                 

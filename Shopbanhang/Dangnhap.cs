@@ -44,17 +44,18 @@ namespace Shopbanhang
                     frm.Show();
                     this.Hide();
                 }
-                
+                else
+                {
+                    MessageBox.Show("Đăng nhập thất bại!");
+                    this.lblstatus.ForeColor = Color.Red;
+                    this.lblstatus.Text = "Tài khoản không tồn tại";
+                    this.txttk.Clear();
+                    this.txtmk.Clear();
+                    this.txttk.Focus();
+                }
+
             }
-            else
-            {
-                MessageBox.Show("Đăng nhập thất bại!");
-                this.lblstatus.ForeColor = Color.Red;
-                this.lblstatus.Text = "Tài khoản không tồn tại";
-                this.txttk.Clear();
-                this.txtmk.Clear();
-                this.txttk.Focus();
-            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
